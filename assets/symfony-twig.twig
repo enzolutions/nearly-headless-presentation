@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="box">
+        {{ react_component('Registration', {'rendering': 'client_side'}) }}
+    </div>
+{% endblock body %}
+
+{% block javascripts %}
+    <script src="{{ asset('assets/build/form.register.js') }}"></script>
+{% endblock javascripts %}
